@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <phpunit
+        bootstrap="vendor/autoload.php"
+        colors="true"
+        verbose="true"
+        stopOnFailure="false"
+        failOnWarning="true"
+        failOnRisky="true">
+    <testsuites>
+        <testsuite name="TunnelManager Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+    </php>
+</phpunit>

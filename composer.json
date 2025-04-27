@@ -1,0 +1,39 @@
+{
+  "name": "nassirian/laravel-tunnel-manager",
+  "description": "Manage Cloudflare tunnels and subdomains in Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iman Nassirian",
+      "email": "you@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nassirian\\TunnelManager\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "guzzlehttp/psr7": "^2.0",
+    "guzzlehttp/promises": "^2.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nassirian\\TunnelManager\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nassirian\\TunnelManager\\TunnelManagerServiceProvider"
+      ]
+    }
+  }
+}
