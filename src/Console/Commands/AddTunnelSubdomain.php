@@ -12,10 +12,10 @@ class AddTunnelSubdomain extends Command
     public function handle()
     {
         $subdomain = $this->argument('subdomain');
-        $zoneId = config('tunnelmanager.zone_id');
-        $apiToken = config('tunnelmanager.api_token');
-        $domain = config('tunnelmanager.domain');
-        $tunnelUuid = config('tunnelmanager.tunnel_uuid');
+        $zoneId = config('tunnel-manager.zone_id');
+        $apiToken = config('tunnel-manager.api_token');
+        $domain = config('tunnel-manager.domain');
+        $tunnelUuid = config('tunnel-manager.tunnel_uuid');
 
         $response = Http::withToken($apiToken)->post("https://api.cloudflare.com/client/v4/zones/{$zoneId}/dns_records", [
             'type' => 'CNAME',

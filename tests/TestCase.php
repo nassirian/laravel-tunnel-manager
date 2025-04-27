@@ -16,10 +16,10 @@ abstract class TestCase extends OrchestraTestCase
 
     protected function defineEnvironment($app)
     {
-        $app['config']->set('tunnelmanager.api_token', 'dummy-token');
-        $app['config']->set('tunnelmanager.zone_id', 'dummy-zone-id');
-        $app['config']->set('tunnelmanager.domain', 'example.com');
-        $app['config']->set('tunnelmanager.tunnel_uuid', 'dummy-tunnel-uuid');
+        $app['config']->set('tunnel-manager.api_token', 'dummy-token');
+        $app['config']->set('tunnel-manager.zone_id', 'dummy-zone-id');
+        $app['config']->set('tunnel-manager.domain', 'example.com');
+        $app['config']->set('tunnel-manager.tunnel_uuid', 'dummy-tunnel-uuid');
     }
 }
 
